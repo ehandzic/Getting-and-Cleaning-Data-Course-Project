@@ -60,5 +60,5 @@ TidyDataSet <- TidyDataSet[order(TidyDataSet$subjectId, TidyDataSet$activityId),
 
 #Write tidy data set to file
 
-write.table(TidyDataSet, file = outputFileName)
+write.table(TidyDataSet, file = outputFileName,row.name=FALSE)
 
